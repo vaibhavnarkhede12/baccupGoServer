@@ -34,10 +34,10 @@ pipeline {
         sh 'go version'
         echo "displaying testversion stage for brnach ${BRANCH_NAME}  - BUILD URL ${BUILD_URL} "
         echo "test the  pull request buidler"
-        script{
-//           setGitHubPullRequestStatus.message("message from jenkins")
-          pullRequest.comment("this is a message from jenkins ")
-        }
+//         script{
+// //           setGitHubPullRequestStatus.message("message from jenkins")
+//           pullRequest.comment("this is a message from jenkins ")
+//         }
       }
     }  
       
