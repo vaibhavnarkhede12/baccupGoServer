@@ -9,8 +9,7 @@ pipeline {
       choices:[
         'python',
         'golang',
-        'java',
-        'eng'
+        'java'
       ],
       description:'select the deployment language')
     choice(
