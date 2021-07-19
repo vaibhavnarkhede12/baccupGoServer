@@ -7,7 +7,7 @@ pipeline {
     choice(
     name:'language',
       choices:[
-        'pythnon',
+        'pythnnon',
         'golang',
         'java',
         'eng'
