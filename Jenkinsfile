@@ -41,11 +41,11 @@ pipeline {
     }  
       
     stage('build') {
-       when {
-        expression {
-          BRANCH_NAME == 'master'
-        }
-      }
+//        when {
+//         expression {
+//           BRANCH_NAME == 'master'
+//         }
+//       }
       steps {
         echo "executing the ${BRANCH_NAME} in BUILD STAGE - BUILD URL ${BUILD_URL}"
         sh 'go build serve.go'
